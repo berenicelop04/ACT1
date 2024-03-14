@@ -18,6 +18,11 @@ class Solicitudes extends Eloquent
         'duracion_servicio',
     ];
 
+    protected $connection = 'mongodb';
+    protected $collection = 'solicitudes';
+    protected $primaryKey = '_id';
+    
+
     public function cliente()
     {
         return $this->belongsTo(User::class, 'cliente_id');

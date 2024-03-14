@@ -26,7 +26,7 @@ class ServiciosSeeder extends Seeder
             'precio_servicio' => '700',
             'duracion_servicio' => '4',
             
-        ]);
+        ]); 
     
     }
 }
